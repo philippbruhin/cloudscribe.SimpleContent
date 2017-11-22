@@ -1,0 +1,79 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>cloudscribe_SimpleContent-642A6459-415E-4A05-B8BF-EC1692D1BD89</UserSecretsId>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>    
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="wwwroot\**\*;navigation.xml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+
+    <Content Remove="appsettings.Development.json" CopyToPublishDirectory="Never" />
+    <Content Include="appsettings.Development.json" CopyToPublishDirectory="Never" />
+    
+    
+    <Content Include="sitefiles\**\wwwroot\**" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="SharedThemes\**\wwwroot\**" CopyToPublishDirectory="PreserveNewest" />
+
+    <Content Remove="tsconfig.json" CopyToPublishDirectory="Never" />
+    <Content Remove="package.json" CopyToPublishDirectory="Never" />
+    <Content Include="tsconfig.json" CopyToPublishDirectory="Never" />
+    <Content Include="package.json" CopyToPublishDirectory="Never" />
+  </ItemGroup>
+
+  <ItemGroup Label="Package References">
+
+    <PackageReference Include="cloudscribe.Core.Web.Mvc" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.Core.Storage.EFCore.MSSQL" Version="2.0.*" />
+    
+    <PackageReference Include="cloudscribe.Core.SimpleContent.Mvc" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.Web.Mvc" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.MetaWeblog" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.Syndication" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.Syndication.Web" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.Storage.EFCore.MSSQL" Version="2.0.*" />
+
+    <PackageReference Include="cloudscribe.Logging.Web" Version="2.1.*" />
+    <PackageReference Include="cloudscribe.Logging.EFCore.MSSQL" Version="2.1.*" />
+
+
+    <PackageReference Include="cloudscribe.SimpleContactForm" Version="2.0.*" />
+
+    <PackageReference Include="cloudscribe.Kvp.Storage.EFCore.MSSQL" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.UserProperties.Kvp" Version="2.0.*" />
+    <PackageReference Include="cloudscribe.UserProperties" Version="2.0.*" />
+
+    <PackageReference Include="cloudscribe.Web.Localization" Version="2.0.*" />
+    
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.*" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.AzureStorage" Version="2.0.*" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.*" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.*" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.*" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.*" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.*" />
+  </ItemGroup>
+
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <Exec Command="npm install" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.production.config.js" />
+    <ItemGroup>
+      <DistFiles Include="wwwroot\dist\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

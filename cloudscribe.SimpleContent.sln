@@ -1,41 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5243DE57-7C89-4208-8876-405E13605D16}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D153CE69-0248-433D-96EC-80557203D54E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Models", "src\cloudscribe.SimpleContent.Models\cloudscribe.SimpleContent.Models.csproj", "{8D2014C8-8699-45A1-A47D-46B392678722}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Storage.NoDb", "src\cloudscribe.SimpleContent.Storage.NoDb\cloudscribe.SimpleContent.Storage.NoDb.csproj", "{325BCC90-44DF-40B7-ADAC-F2C0FCBE9525}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.MetaWeblog", "src\cloudscribe.SimpleContent.MetaWeblog\cloudscribe.SimpleContent.MetaWeblog.csproj", "{80EAB768-C2FC-4D61-A185-5A51314B8505}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Syndication", "src\cloudscribe.SimpleContent.Syndication\cloudscribe.SimpleContent.Syndication.csproj", "{CA2F82DA-6218-4520-AD21-6B7BC27414DD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Security.SimpleAuth", "src\cloudscribe.SimpleContent.Security.SimpleAuth\cloudscribe.SimpleContent.Security.SimpleAuth.csproj", "{495BACBA-D796-44CF-ACBD-3678D4BF9679}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Web", "src\cloudscribe.SimpleContent.Web\cloudscribe.SimpleContent.Web.csproj", "{93EB904A-E929-4B6E-B135-8A34DB2E8CD8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Core.SimpleContent", "src\cloudscribe.Core.SimpleContent\cloudscribe.Core.SimpleContent.csproj", "{8027C4ED-4C67-4D8D-BC13-C14EE3C75097}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Storage.EFCore.Common", "src\cloudscribe.SimpleContent.Storage.EFCore.Common\cloudscribe.SimpleContent.Storage.EFCore.Common.csproj", "{AC7D7A37-B684-4F02-A725-1625E96DE2B8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Storage.EFCore.MSSQL", "src\cloudscribe.SimpleContent.Storage.EFCore.MSSQL\cloudscribe.SimpleContent.Storage.EFCore.MSSQL.csproj", "{B23CA546-4B27-472F-B962-7E2C981CE89C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Storage.EFCore.MySQL", "src\cloudscribe.SimpleContent.Storage.EFCore.MySQL\cloudscribe.SimpleContent.Storage.EFCore.MySQL.csproj", "{4713D574-918D-4129-A11C-2287AE4B119F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Storage.EFCore.pgsql", "src\cloudscribe.SimpleContent.Storage.EFCore.pgsql\cloudscribe.SimpleContent.Storage.EFCore.pgsql.csproj", "{194BE097-4347-4B9D-87C9-F3B13D337DA4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Web.Views.Bootstrap3", "src\cloudscribe.SimpleContent.Web.Views.Bootstrap3\cloudscribe.SimpleContent.Web.Views.Bootstrap3.csproj", "{4044F5E6-DA8A-433A-9FFF-C5EEFE6F9511}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.Core.SimpleContent.Mvc", "src\cloudscribe.Core.SimpleContent.Mvc\cloudscribe.Core.SimpleContent.Mvc.csproj", "{9595D935-BB5F-4038-83C5-80D7F943A85E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cloudscribe.SimpleContent.Web.Mvc", "src\cloudscribe.SimpleContent.Web.Mvc\cloudscribe.SimpleContent.Web.Mvc.csproj", "{4D0F696B-5DA7-47A4-84DC-9422FCBF2DE2}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sourceDev.WebApp", "src\sourceDev.WebApp\sourceDev.WebApp.csproj", "{8479648C-E355-4850-B670-764F65C4F3D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cloudscribe.SimpleContent", "cloudscribe.SimpleContent\cloudscribe.SimpleContent.csproj", "{CFA7A7E5-95FD-4D68-A662-C3E6D41945F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,85 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8D2014C8-8699-45A1-A47D-46B392678722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D2014C8-8699-45A1-A47D-46B392678722}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D2014C8-8699-45A1-A47D-46B392678722}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D2014C8-8699-45A1-A47D-46B392678722}.Release|Any CPU.Build.0 = Release|Any CPU
-		{325BCC90-44DF-40B7-ADAC-F2C0FCBE9525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{325BCC90-44DF-40B7-ADAC-F2C0FCBE9525}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{325BCC90-44DF-40B7-ADAC-F2C0FCBE9525}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{325BCC90-44DF-40B7-ADAC-F2C0FCBE9525}.Release|Any CPU.Build.0 = Release|Any CPU
-		{80EAB768-C2FC-4D61-A185-5A51314B8505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80EAB768-C2FC-4D61-A185-5A51314B8505}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80EAB768-C2FC-4D61-A185-5A51314B8505}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80EAB768-C2FC-4D61-A185-5A51314B8505}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CA2F82DA-6218-4520-AD21-6B7BC27414DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA2F82DA-6218-4520-AD21-6B7BC27414DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA2F82DA-6218-4520-AD21-6B7BC27414DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA2F82DA-6218-4520-AD21-6B7BC27414DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{495BACBA-D796-44CF-ACBD-3678D4BF9679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{495BACBA-D796-44CF-ACBD-3678D4BF9679}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{495BACBA-D796-44CF-ACBD-3678D4BF9679}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{495BACBA-D796-44CF-ACBD-3678D4BF9679}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93EB904A-E929-4B6E-B135-8A34DB2E8CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93EB904A-E929-4B6E-B135-8A34DB2E8CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93EB904A-E929-4B6E-B135-8A34DB2E8CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93EB904A-E929-4B6E-B135-8A34DB2E8CD8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8027C4ED-4C67-4D8D-BC13-C14EE3C75097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8027C4ED-4C67-4D8D-BC13-C14EE3C75097}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8027C4ED-4C67-4D8D-BC13-C14EE3C75097}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8027C4ED-4C67-4D8D-BC13-C14EE3C75097}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC7D7A37-B684-4F02-A725-1625E96DE2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC7D7A37-B684-4F02-A725-1625E96DE2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC7D7A37-B684-4F02-A725-1625E96DE2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC7D7A37-B684-4F02-A725-1625E96DE2B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B23CA546-4B27-472F-B962-7E2C981CE89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B23CA546-4B27-472F-B962-7E2C981CE89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B23CA546-4B27-472F-B962-7E2C981CE89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B23CA546-4B27-472F-B962-7E2C981CE89C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4713D574-918D-4129-A11C-2287AE4B119F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4713D574-918D-4129-A11C-2287AE4B119F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4713D574-918D-4129-A11C-2287AE4B119F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4713D574-918D-4129-A11C-2287AE4B119F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{194BE097-4347-4B9D-87C9-F3B13D337DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{194BE097-4347-4B9D-87C9-F3B13D337DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{194BE097-4347-4B9D-87C9-F3B13D337DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{194BE097-4347-4B9D-87C9-F3B13D337DA4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4044F5E6-DA8A-433A-9FFF-C5EEFE6F9511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4044F5E6-DA8A-433A-9FFF-C5EEFE6F9511}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4044F5E6-DA8A-433A-9FFF-C5EEFE6F9511}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4044F5E6-DA8A-433A-9FFF-C5EEFE6F9511}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9595D935-BB5F-4038-83C5-80D7F943A85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9595D935-BB5F-4038-83C5-80D7F943A85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9595D935-BB5F-4038-83C5-80D7F943A85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9595D935-BB5F-4038-83C5-80D7F943A85E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D0F696B-5DA7-47A4-84DC-9422FCBF2DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D0F696B-5DA7-47A4-84DC-9422FCBF2DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D0F696B-5DA7-47A4-84DC-9422FCBF2DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D0F696B-5DA7-47A4-84DC-9422FCBF2DE2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8479648C-E355-4850-B670-764F65C4F3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8479648C-E355-4850-B670-764F65C4F3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8479648C-E355-4850-B670-764F65C4F3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8479648C-E355-4850-B670-764F65C4F3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA7A7E5-95FD-4D68-A662-C3E6D41945F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA7A7E5-95FD-4D68-A662-C3E6D41945F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA7A7E5-95FD-4D68-A662-C3E6D41945F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA7A7E5-95FD-4D68-A662-C3E6D41945F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{8D2014C8-8699-45A1-A47D-46B392678722} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{325BCC90-44DF-40B7-ADAC-F2C0FCBE9525} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{80EAB768-C2FC-4D61-A185-5A51314B8505} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{CA2F82DA-6218-4520-AD21-6B7BC27414DD} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{495BACBA-D796-44CF-ACBD-3678D4BF9679} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{93EB904A-E929-4B6E-B135-8A34DB2E8CD8} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{8027C4ED-4C67-4D8D-BC13-C14EE3C75097} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{AC7D7A37-B684-4F02-A725-1625E96DE2B8} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{B23CA546-4B27-472F-B962-7E2C981CE89C} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{4713D574-918D-4129-A11C-2287AE4B119F} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{194BE097-4347-4B9D-87C9-F3B13D337DA4} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{4044F5E6-DA8A-433A-9FFF-C5EEFE6F9511} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{9595D935-BB5F-4038-83C5-80D7F943A85E} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{4D0F696B-5DA7-47A4-84DC-9422FCBF2DE2} = {5243DE57-7C89-4208-8876-405E13605D16}
-		{8479648C-E355-4850-B670-764F65C4F3D5} = {5243DE57-7C89-4208-8876-405E13605D16}
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FD03E82-2460-48D5-9D15-0D2BFE15CE1E}
 	EndGlobalSection
 EndGlobal
